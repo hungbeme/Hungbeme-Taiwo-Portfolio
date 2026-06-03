@@ -84,7 +84,7 @@ const observerEl = new IntersectionObserver(
   {
     root: null,
     threshold: 0,
-    rootMargin: "-60px",
+    rootMargin: "-10% 0px 0px 0px",
   },
 );
 observerEl.observe(heroSectionEl);
@@ -130,10 +130,10 @@ const revealSection = function (entries, observer) {
   observer.unobserve(entry.target);
 };
 
-const sectionObserver = new IntersectionObserver(revealSection, {
-  root: null,
-  threshold: 0.1,
-});
+// const sectionObserver = new IntersectionObserver(revealSection, {
+//   root: null,
+//   threshold: 0.1,
+// });
 
 sectionAll.forEach((section) => {
   sectionObserver.observe(section);
