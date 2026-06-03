@@ -546,8 +546,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   align-content: stretch;
-  row-gap: 3.2rem;
-  column-gap: 3.2rem;
+  gap: 6rem;
 }
 
 .project {
