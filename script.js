@@ -46,7 +46,6 @@ console.log(currentTheme);
 
 if (currentTheme === "dark") {
   bodyEl.classList.add("change-mode");
-  console.log(currentTheme, "current theme");
 } else if (window.matchMedia("(prefers-color-scheme : dark)").matches) {
   document.documentElement.setAttribute("data-theme", "dark");
 }
@@ -130,10 +129,10 @@ const revealSection = function (entries, observer) {
   observer.unobserve(entry.target);
 };
 
-// const sectionObserver = new IntersectionObserver(revealSection, {
-//   root: null,
-//   threshold: 0.1,
-// });
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.1,
+});
 
 sectionAll.forEach((section) => {
   sectionObserver.observe(section);
