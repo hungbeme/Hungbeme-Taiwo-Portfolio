@@ -677,6 +677,14 @@ input {
   color: var(--background);
 }
 
+textarea {
+  color: var(--background);
+}
+
+.change-mode textarea {
+  color: var(--primary);
+}
+
 .change-mode input {
   color: var(--primary);
 }
