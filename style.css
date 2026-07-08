@@ -457,6 +457,75 @@ main {
   font-size: 3.2rem;
   color: var(--accent-color);
 }
+/*********************************/
+/******** WORK EXPERIENCE SECTION  ********/
+/*******************************/
+
+.work-experience {
+  margin-bottom: 8rem;
+  font-size: 0.875rem;
+  font-style: inherit;
+  position: relative;
+  margin-left: 1.25rem;
+}
+
+h2 {
+  margin-bottom: 2.5rem !important;
+  font-size: 3rem !important;
+  text-transform: uppercase !important;
+}
+
+.work-experience h2 {
+  font-size: 3rem;
+  font-style: inherit;
+}
+
+.workContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.workContainer::before {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: -1.25rem;
+  height: 75%;
+  width: 0.3125rem;
+  background: var(--accent-color);
+}
+
+.workDot {
+  position: absolute;
+  /* top: 0; */
+  left: -2.0625rem;
+  height: 1.875rem;
+  width: 1.875rem;
+  background: var(--accent-color);
+  border-radius: 50%;
+}
+
+.workTitle {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 0.625rem;
+}
+
+.work-location {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.workText ul {
+  padding-left: 1.25rem;
+  font-size: 1.2rem;
+}
+
+/* .workText ul li{
+
+} */
 
 /*********************************/
 /******** SKILLS SECTION  ********/
